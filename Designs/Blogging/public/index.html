@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>React App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+  <style>
+    .box{
+      width : 10vw;
+    }
+    .hero {
+
+      height : 100%;
+      width : 100%;
+    }
+    .blog {
+      background-color : #FCF2EB;
+      width : 100%;
+      height : 100%;
+      position : relative;
+      top : 100%;
+    }
+    .program {
+      position : relative;
+      height : 100%;
+      width : 100%;
+    }
+    .resource {
+      background-color : #FCF2EB;
+      position : relative;
+      height : 100%;
+      width : 100%;
+    }
+    .stories {
+      background-color : #FCF2EB;
+
+      position : relative;
+      height : 100%;
+      width : 100%;
+
+    }
+    .partners {
+      position : relative;
+      height : 60vh;
+    }
+    .invite {
+      position : relative;
+      height : 100%;
+      width : 100%;
+    }
+    .footer{
+      position : relative;
+      height : 100%;
+      width : 100%;
+    }
+    .Image2 {
+      position : relative;
+      margin-top : 5%;
+      left : 6%;
+      height : 90%;
+      width : 100%;
+    }
+    .blog-p {
+      position : relative;
+      margin-top : 7%;
+      left : 10%;
+
+      width : 40vw;
+    }
+    .inner{
+
+
+    }
+    .Science {
+      width : 80%;
+      position : relative;
+      left : 10%;
+
+    }
+    .Arts {
+      width : 80%;
+      position : relative;
+
+      left : 15%;
+    }
+    .controller {
+      position : relative;
+      top : 10%;
+    }
+    .button {
+      width : 5vw;
+      height : 10vh;
+    }
+    .card1 {
+      width : 96%;
+      height : 10%;
+    }
+    .button1{
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      top : 40%;
+      left : 30%;
+      position : relative;
+      display: inline-block;
+    }
+    .capture {
+      height : 100%;
+    }
+    .More{
+      position : relative;
+
+    }
+    .imagifier {
+      position : absolute;
+      left : 20%;
+      top : 70%;
+    }
+    .expand{
+      height : 40vh;
+    }
+    .En{
+      position : relative;
+      left : -1%;
+    }
+    .input-size{
+      height : 8vh;
+      width : 18vw;
+    }
+    .text-control {
+      position : absolute;
+      top : 25%;
+      left : 10%;
+    }
+    .font-w{
+      font-weight : 800;
+    }
+    .size{
+      height : 150%;
+      width : 50%;
+    }
+    .green:hover{
+      color : green;
+    }
+    .rotation:hover {
+      transform: rotateY(180deg);
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    .linkie{
+      text-decoration : underline;
+      text-decoration-color: green;
+
+    }
+    .expansion:hover {
+      font-size : 20px;
+    }
+    .bg-trans{
+      background : transparent;
+    }
+    .heroine{
+      width : 100%;
+      height : 70vh;
+    }
+    .ps-auto {
+      position : absolute;
+      left : 70%;
+      top : 10%;
+    }
+
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-white sticky-top">
+  <div class="container fs-5">
+    <img class= "Logo" src ="UniversityLogo.png">
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item m-2">
+          <a class=" link-underline text-dark link-underline-opacity-0 " href =""><span class="green">Home</span></a>
+        </li>
+        <li class="nav-item m-2">
+
+          <a class="link-underline text-dark link-underline-opacity-0 " href =""><span class="green">About </span></a>
+        </li>
+        <li class="nav-item m-2">
+          <a class="link-underline  text-dark link-underline-opacity-0 " href =""><span class="green">Programs </span></a>
+        </li>
+        <li class="nav-item m-2">
+          <a class="link-underline text-dark link-underline-opacity-0 " href =""><span class="green">Blog </span></a>
+        </li>
+        <li class="nav-item m-2">
+
+          <a class="link-underline text-dark link-underline-opacity-0 " href =""><span class="green">Contact</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="box bg-white text-light">
+
+    </div>
+    <a class="link-underline text-dark link-underline-opacity-0 m-3 d-lg-block d-none d-md-none" href =""><span class="green">Call us </span>: 012345678</a>
+    <div class="icon m-2 fs-4 d-lg-block d-md-none d-none d-sm-none">
+        <span class="">
+    <i class="fa-brands fa-square-facebook rotation" style="color: #226cec;"></i>
+        </span>
+      <i class="fa-brands fa-square-twitter rotation" style="color: #3272e2;"></i>
+      <i class="fa-brands fa-linkedin rotation" style="color: #12dfed;"></i>
+      <i class="fa-brands fa-square-youtube rotation" style="color: #ea391a;"></i>
+      <i class="fa-solid fa-envelope rotation" style="color: #76fa1e;"></i>
+    </div>
+  </div>
+</nav>
+<div class="bg-trans hero" id = "root">
+
+</div>
+<div class="blog text-wrap">
+  <div class="row row-cols-lg-2 row-cols-1 row-cols-md-1 row-cols-sm-1">
+
+    <div class="col">
+      <img class="Image2 img-fluid" src = "Image2.jpg">
+    </div>
+    <div class="col blog-p">
+      <h2>
+        A COMPREHENSIVE TEACHING APPROACH
+      </h2>
+      <p class="text-wrap">
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas felis felis, vulputate sit amet mauris et, semper aliquam ligula. Integer efficitur tellus metus, sed feugiat leo posuere ac. Morbi vitae tincidunt malesuada massa.
+        <br> <br>
+        Maecenas felis felis, vulputate sit amet mauris et, semper aliquam ligula. Integer efficitur tellus metus, sed feugiat leo posuere ac. Morbi vitae tincidunt mi, et malesuada massa.
+      </p>
+      <a class="text-success linkie  expansion fs-5 pb-5" href = "">
+        Learn More
+      </a>
+    </div>
+  </div>
+</div>
+<div class="bg-trans program">
+  <h2 class="inner text-center font-w">
+    <br>
+    <br>
+    PROGRAMS WE OFFER
+  </h2>
+  <p class="inner text-center">
+    <br>
+    Maecenas felis felis, vulputate sit amet mauris et, semper aliquam ligula.<br> Integer efficitur tellus metus, sed feugiat leo posuere ac. <br>Morbi vitae tincidunt mi, et malesuada massa.
+  </p>
+
+  <div class=" controller">
+    <div class="row row-cols-1 row-cols-lg-2 row-cols-md-1 row-cols-sm-1 mt-4 mb-5">
+      <div class="col">
+        <div class="card Science">
+          <div class="card-body">
+            <img class="img-fluid" src = "Science.jpg">
+            <h2>
+              <br>
+              Faculty Of Science
+            </h2>
+            <p>
+              <br>
+              Integer efficitur tellus metus, sed feugiat leo posuere ac. Morbi vitae tincidunt mi, et malesuada massa. Sed blandit placerat elit sit amet condimentum
+            </p>
+            <a>Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card Arts">
+          <div class="card-body">
+            <img class="img-fluid" src="Arts.jpg">
+            <h2>
+              <br>Faculty Of Arts</h2>
+            <p><br>Integer efficitur tellus metus, sed feugiat leo posuere ac. Morbi vitae tincidunt mi, et malesuada massa. Sed blandit placerat elit sit amet condimentum.</p>
+            <a>Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class=" resource">
+  <div class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-1">
+    <div class="col">
+      <div class="card capture mt-5">
+        <div class="card-body">
+          <h2 class="ms-4">
+            <br>
+            ESSENTIAL RESOURCES
+          </h2>
+          <p class="ms-4">
+            Maecenas felis felis, vulputate sit amet mauris et, semper aliquam ligula.
+            <br>
+            Integer efficitur tellus metus, sed feugiat leo posuere.
+          </p>
+          <div class=" mt-4">
+            <div class="card  card1">
+              <div class="row row-cols-2 ">
+                <div class="col col-lg-9">
+                  <h2 class="ms-5">
+                    <br>
+                    First year students
+                  </h2>
+                  <p class="ms-5">
+
+                    Integer efficitur tellus metus, sed feugiat leo posuere ac.
+                    <br>
+                    Morbi vitae tincidunt mi, et malesuada massa.
+                  </p>
+                </div>
+                <div class="col col-lg-2">
+                  <button class="button1 rounded-circle btn btn-outline-success button fs-3 "> > </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" mt-4">
+            <div class="card  card1">
+              <div class="row row-cols-2 ">
+                <div class="col col-lg-9">
+                  <h2 class="ms-5">
+                    <br>
+                    First year students
+                  </h2>
+                  <p class="ms-5">
+
+                    Integer efficitur tellus metus, sed feugiat leo posuere ac.
+                    <br>
+                    Morbi vitae tincidunt mi, et malesuada massa.
+                  </p>
+                </div>
+                <div class="col col-lg-2">
+                  <button class="button1 rounded-circle btn btn-outline-success button fs-3 "> > </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" mt-4">
+            <div class="card  card1">
+              <div class="row row-cols-2 ">
+                <div class="col col-lg-9">
+                  <h2 class="ms-5">
+                    <br>
+                    First year students
+                  </h2>
+                  <p class="ms-5">
+
+                    Integer efficitur tellus metus, sed feugiat leo posuere ac.
+                    <br>
+                    Morbi vitae tincidunt mi, et malesuada massa.
+                  </p>
+                </div>
+                <div class="col col-lg-2">
+                  <button class="button1 rounded-circle btn btn-outline-success button fs-3 "> > </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <img class=" mt-5 img-fluid" src="Resources.jpg">
+    </div>
+  </div>
+</div>
+<div class = " stories">
+  <div class="container">
+    <h2 class="font-w">
+      <br>
+      TOP STORIES
+      <a class=" fs-4 text-wrap ps-auto  link-underline link-underline-opacity-0 text-success" href = "">
+        More Stories
+      </a>
+    </h2>
+    <div class="row row-cols-lg-3 row-cols-2 row-cols-sm-2 row-cols-md-2">
+      <div class="col col-lg-4 mt-5">
+        <img src = "Story1.jpg" class="img-fluid mt-5">
+        <a class="text-center link-underline link-underline-opacity-0 green text-dark fs-5" href = ""><br><br>Linguistics alumna  says <br> recognizing  Indigenous <br>  Languages Day is  crucial to <br>our histories</a>
+      </div>
+      <div class="col col-lg-4 mt-5">
+        <img src = "Story1.jpg" class="img-fluid mt-5">
+        <a class="text-center green link-underline link-underline-opacity-0 text-dark fs-5" href = ""><br><br>Linguistics alumna  says <br> recognizing  Indigenous <br>  Languages Day is  crucial to <br>our histories</a>
+      </div>
+      <div class="col col-lg-4 mt-5">
+        <img src = "Story1.jpg" class="img-fluid mt-5">
+        <a class="text-center link-underline link-underline-opacity-0 green text-dark fs-5" href = ""><br> <br>Linguistics alumna  says <br> recognizing  Indigenous <br>  Languages Day is  crucial to <br>our histories</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-black text-light partners">
+  <div class="container expand">
+    <h1 class="text-center">
+      <br>
+      <br>
+
+      OUR PARTNERS
+    </h1>
+    <p class="text-center">
+      Maecenas felis felis, vulputate sit amet mauris et, semper aliquam ligula. Integer <br> efficitur tellus metus, sed feugiat leo posuere.
+    </p>
+    <div class= "imagifier">
+      <img class="mx-2" src = "Syngenta.png">
+      <img class="mx-2" src="Bumn.png">
+      <img class="mx-2" src="Haier.png">
+      <img class = "mx-2" src = "Cidb.png">
+    </div>
+  </div>
+</div>
+<div class="bg-danger invite">
+  <div class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-1">
+    <img class="" src = "visit2.jpg">
+    <div class="card En bg-success">
+      <div class = "card-body text-center text-light">
+        <h2 class="font-w">
+          TRUSTED BY OVER
+          <br>
+          6000+ STUDENTS
+        </h2>
+        <p> <br>
+          Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Maecenas felis felis, vulputate <br>sit amet mauris et, semper aliquam ligula.<br> Integer efficitur tellus metus, sed feugiat leo <br> posuere ac. Morbi vitae tincidunt malesuada <br>massa.
+          <br>
+          <br>
+          Maecenas felis felis, vulputate sit amet <br> mauris et, semper aliquam ligula Integer <br> efficitur tellus metus, sed feugiat leo posuere <br> ac. Morbi vitae tincidunt mi, et malesuada <br> massa. <br>
+        </p>
+        <a class="text-warning link-underline link-underline-opacity-0" href = "">Join Now <br><br></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-dark text-light footer ">
+  <br>
+  <br>
+  <br>
+  <div class="row row-cols-lg-5 row-cols-2 row-cols-md-3 row-cols-sm-2 container ms-5 g-5">
+    <div class="col">
+      <img src = "UniversityLogo.png">
+    </div>
+    <div class="col">
+      <div class="container">
+        <h2 class="">Quick Links
+        </h2>
+        <a class="text-light link-underline link-underline-opacity-0 green" href = ""><br> Work <br></a>
+        <a class="text-light link-underline link-underline-opacity-0 green" href = ""><br>Services <br></a>
+        <a class="text-light link-underline link-underline-opacity-0 green" href = ""><br>Products <br></a>
+        <a class="text-light link-underline link-underline-opacity-0 green" href = ""><br>Tips and Tricks</a>
+      </div>
+    </div>
+    <div class="col">
+      <h2>
+        Programs <br> <br>
+      </h2>
+      <a class="text-light link-underline link-underline-opacity-0 green" href = "">
+        Air Frieght <br>
+      </a>
+      <a class="text-light link-underline link-underline-opacity-0 green" href = ""><br>
+        Ocean Freight<br>
+      </a>
+      <a class="text-light link-underline link-underline-opacity-0 green" href = ""><br>
+        Large Projects<br>
+      </a>
+    </div>
+    <div class="col">
+      <h2>
+        Resourses
+      </h2>
+      <a class="text-light link-underline link-underline-opacity-0 green" href = "">
+        <br>            FAQ
+        <br> </a>
+      <a class="text-light link-underline link-underline-opacity-0 green" href = "">
+        <br>Submit Ticket<br>
+      </a>
+      <a class="text-light link-underline link-underline-opacity-0 green" href = "">
+        <br>Contact Us<br>
+      </a>
+    </div>
+    <div class="col">
+      <h2>
+        Newsletter
+      </h2>
+      <p><br>Subscribe newsletter to get updates.
+
+      </p>
+      <div class="input-group">
+        <input class="input-size  ps-2 " type = "text" placeholder = "Enter your Email">
+      </div>
+      <br>
+      <div class="fs-4">
+        <i class="fa-brands fa-square-facebook text-light rotation" ></i>
+        <i class="fa-brands fa-square-twitter text-light rotation"  ></i>
+        <i class="fa-brands fa-linkedin text-light rotation"></i>
+        <i class="fa-brands fa-square-youtube text-light rotation"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+</body>
+</html>
